@@ -1,0 +1,69 @@
+/* Navbar styles */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  transition: opacity 0.3s ease;
+}
+
+nav.hidden {
+  opacity: 0;
+  pointer-events: none; 
+}
+
+/* Container styles */
+.container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh; /* Full viewport height */
+  scroll-behavior: smooth;
+
+  /* Hide scrollbar (WebKit browsers like Chrome, Edge, Safari) */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.container::-webkit-scrollbar {
+  display: none; /* WebKit browsers */
+}
+/* Snap item styles */
+.snap-item {
+  min-height: 100vh; /* Ensure snapping to full viewport height */
+  scroll-snap-align: start;
+  font-size: 2rem;
+
+  border: 1px solid #ccc;
+}
+
+.snap-item:nth-child(odd) {
+}
+
+.snap-item:nth-child(even) {
+}
+.h-100 {
+  height: 100%;
+}
+
+.text-color{
+  color: var(--text-color);
+}
+.highligh-primary-color{
+  color: var(--primary-color);
+}
+
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--background-transprent-color);
+  width: 90%;
+  margin: 10px auto 0;
+  border-radius: 25px;
+  backdrop-filter: blur(10px);
+  padding: 2vh;
+}

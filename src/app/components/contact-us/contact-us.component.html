@@ -1,0 +1,68 @@
+
+<section class="contact">
+  <div class="contact-container">
+    <div class="slide1 ">
+      <div style="height: 100%;" class="imageContainer info-section">
+        <img class="sideimage" src="assets/gif2.gif" alt="assets/stiker1.png" />
+      </div>
+    </div>
+    <div class="slide2">
+      <div style="text-align: center;" class="heading-1 font-bold">
+        Reach Out to <span class="highligh-primary-color">me !</span>
+
+
+      </div>
+      <div class="column-div2">
+        <owl-carousel-o [options]="customOptions" class="owl-theme">
+          <ng-template class="ng-template" carouselSlide *ngFor="let slide of slides; trackBy: trackByFn">
+            <ng-container class="ng-template" [ngSwitch]="slide.type">
+              <!-- Info Slide -->
+              <div ngClass="information" *ngSwitchCase="'info'" class="info-section">
+                <div class="profile-card">
+                  <div class="background-image">
+                    <!-- Background image for the profile card -->
+                  </div>
+                  <div class="profile-picture">
+                    <img
+                      src="https://www.shutterstock.com/image-vector/modern-certificate-template-design-awards-600nw-2504083753.jpg"
+                      jsaction="" class="sFlh5c FyHeAf iPVvYb" style="max-width: 600px; height: 263px; margin: 0px; width: 351px;"
+                      alt="4,825 Certificate Format Royalty-Free Photos and Stock ..." jsname="kn3ccd" aria-hidden="false">
+                  </div>
+                  <div class="profile-details">
+                    <div class="heading-3 font-bold highligh-primary-color">John Doe</div>
+                    <div class="heading-5 font-normal">Software Developer</div>
+                    <div class="heading-7 font-normal">Enthusiastic developer with a passion for creating impactful digital experiences.</div>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Form Slide -->
+              <div ngClass="information" *ngSwitchCase="'form'" class="form-section">
+                <div class="form-container">
+                    <div class="form-section-div">
+                      <input class="input1" type="text" id="name" name="name" placeholder="Your name" required>
+          
+                      <input  class="input1" type="email" id="email" name="email" placeholder="Your email" required>
+                    </div>
+                    <div class="form-section-div">
+                      <input class="input1" type="text" id="subject" name="subject" placeholder="Subject" required>
+                      <input class="input1" type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                      <textarea class="input1" style="width: 100%;" id="message" name="message" placeholder="Write your message here..." rows="4" required></textarea>
+                          
+          
+                      <div class="download-cv">
+                        <div class="download-button-cv heading-6 font-bold">Download CV</div>
+                      </div>
+                </div>
+              </div>
+        
+             
+            </ng-container>
+          </ng-template>
+        </owl-carousel-o>
+
+      </div>
+    </div>
+  </div>
+</section>

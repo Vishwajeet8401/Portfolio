@@ -1,0 +1,157 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+    /* Default Theme (Light) */
+    --primary-color: #3F72AF;
+    --background-color: #F9F7F7;
+    --background-transprent-color: #f9f7f782;
+    --second-bg-color: #DBE2EF;
+    --text-color: #112D4E;
+    --text-color-inverse:#EEEEEE;
+    --background-image: url('assets/bg-blue.jpg'); /* Dark theme background image */
+
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+
+  }
+  
+  .dark-theme {
+    --primary-color: #00ADB5;
+    --background-color: #222831;
+    --background-transprent-color: #22283187;
+    --second-bg-color: #323946;
+    --text-color: #EEEEEE;
+    --text-color-inverse:#112D4E;
+    --background-image: url('assets/bg-red.png'); /* Dark theme background image */ 
+
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+
+  }
+  
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    background-image: var(--background-image);
+    background-size: cover; /* Ensure the image covers the entire area */
+    background-repeat: no-repeat; /* Prevent tiling */
+    background-attachment: fixed; 
+    background-position: center; /* Ensures the middle portion is shown by default */
+    margin: 0;
+    padding: 0;
+}
+
+.font-light {
+  font-weight: var(--font-weight-light);
+}
+
+.font-normal {
+  font-weight: var(--font-weight-normal);
+}
+
+.font-bold {
+  font-weight: var(--font-weight-bold);
+}
+
+.heading-1 {
+  font-size: 3rem; /* Default for large screens */
+
+  @media (max-width: 768px) {
+    font-size: 2.5rem; /* Tablet screens */
+  }
+
+  @media (max-width: 480px) {
+    font-size: 2rem; /* Mobile screens */
+  }
+}
+
+/* Heading 2 */
+.heading-2 {
+  font-size: 2.5rem;
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.75rem;
+  }
+}
+
+/* Heading 3 */
+.heading-3 {
+  font-size: 2rem;
+
+  @media (max-width: 768px) {
+    font-size: 1.75rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.5rem;
+  }
+}
+
+/* Heading 4 */
+.heading-4 {
+  font-size: 1.75rem;
+
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.25rem;
+  }
+}
+
+/* Heading 5 */
+.heading-5 {
+  font-size: 1.5rem;
+
+  @media (max-width: 768px) {
+    font-size: 1.25rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1rem;
+  }
+}
+
+.heading-6 {
+  font-size: 1.1rem;
+  line-height: 1.4;
+  letter-spacing: 1px;
+
+  @media (max-width: 768px) {
+    font-size: 1.1rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 0.9rem;
+  }
+}
+
+.heading-7 {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  letter-spacing: 1px;
+
+  @media (max-width: 768px) {
+    font-size: 0.8rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 0.7rem;
+  }
+}
+
+
+/* Mobile View Specific Styling */
+@media screen and (max-width: 768px) {
+    body {
+        background-position: center center; /* Focuses on the center for mobile devices */
+    }
+}

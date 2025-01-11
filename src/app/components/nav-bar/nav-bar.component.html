@@ -1,0 +1,29 @@
+<header class="header">
+  <nav class="navbar">
+    <div class="logo">< VISH /></div>
+    <!-- Menu List (Hidden on Mobile) -->
+    <ul class="menu-list">
+      <li><a class="heading-6 font-bold" href="#home">Home</a></li>
+      <li><a class="heading-6 font-bold" href="#services">Services</a></li>
+      <li><a class="heading-6 font-bold" href="#about">About</a></li>
+      <li><a class="heading-6 font-bold" href="#contact">Contact</a></li>
+    </ul>
+
+    <!-- Theme Toggle and Hamburger Icon -->
+    <div class="actions">
+      <div class="theme-toggle" (click)="toggleTheme()">🌗</div>
+      <div class="hamburger" (click)="toggleMenu()">☰</div>
+    </div>
+  </nav>
+
+  <!-- Sidebar Menu for Mobile -->
+  <div class="side-panel" [class.show]="menuOpen">
+    <div class="close-btn" (click)="toggleMenu()">×</div>
+    <ul class="side-menu-list">
+      <li><a href="#home" (click)="toggleMenu()">Home</a></li>
+      <li><a href="#services" (click)="toggleMenu()">Services</a></li>
+      <li><a href="#about" (click)="toggleMenu()">About</a></li>
+      <li><a href="#contact" (click)="toggleMenu()">Contact</a></li>
+    </ul>
+  </div>
+</header>

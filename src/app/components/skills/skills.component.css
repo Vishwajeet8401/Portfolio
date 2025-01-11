@@ -1,0 +1,205 @@
+.icon {
+  width: 30px;
+  height: 30px;
+  color: red;
+}
+.skills-container {
+  height: 75vh;
+  background-color: var(--background-transprent-color);
+  width: 90%;
+  margin: 50px auto 0;
+  border-radius: 25px;
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  gap: 2.3vh;
+  /* padding: clamp(30px, 5%, 50px); */
+}
+.skills {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+.shake {
+  animation: bounce 2s infinite;
+  transition: transform 0.5s ease-in-out; /* Smooth transition for transform */
+}
+
+.shake:hover {
+  animation: none; /* Pause the bounce animation */
+  transform: scale(1.3); /* Smoothly scale on hover */
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0); /* Start and end at the original position */
+  }
+  50% {
+    transform: translateY(-3px); /* Move up */
+  }
+}
+
+/* Stagger the animation for each icon using nth-child */
+.icon:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.icon:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.icon:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.icon:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+.icon:nth-child(5) {
+  animation-delay: 0.8s;
+}
+
+.icon:nth-child(6) {
+  animation-delay: 1s;
+}
+
+
+
+.text-color {
+  color: var(--text-color);
+}
+.highligh-primary-color {
+  color: var(--primary-color);
+}
+.d-flex-center-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2vh;
+}
+.container {
+  padding: clamp(30px, 5%, 50px);
+}
+.skill-card-container {
+  border: 2px solid var(--primary-color);
+  border-radius: 25px;
+  box-shadow: 1px 2px 15px 0px var(--primary-color);
+  letter-spacing: 0.1rem;
+  transition: 0.5s ease;
+  overflow: hidden;
+  height: fit-content;
+  width: fit-content;
+}
+.skill-card-header {
+  background-color: var(--primary-color);
+  color: var(--text-color-inverse);
+  text-align: center;
+  padding: 1.6vh;
+}
+.skill-card-body {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  align-content: center;
+  gap: 20px;
+  padding: 2vh;
+}
+.img-container {
+  gap: 7px;
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  align-items: center;
+}
+.text-lan {
+  border: 2px solid var(--primary-color);
+  padding: 1vh;
+  border-radius: 25px;
+  background-color: var(--primary-color);
+  color: var(--text-color-inverse);
+}
+/* Wrapper to contain the carousel and buttons */
+.carousel-wrapper {
+  /* position: relative; */
+  display: flex;
+  align-items: center;
+  width: 100vh;
+  overflow: hidden;
+}
+
+/* Buttons for navigation */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  background-color: rgb(0 0 0 / 14%);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-btn.left {
+  left: 10px;
+}
+
+.carousel-btn.right {
+  right: 10px;
+}
+
+/* Carousel Container */
+.carousel-container {
+  display: flex;
+  transition: transform 0.3s ease-out;
+  width: 100%;
+  touch-action: pan-x; /* Enable horizontal touch swiping */
+}
+
+/* Carousel Items */
+.carousel-item {
+  flex: 0 0 100%;
+  padding: 2vh;
+  display: flex;
+  box-sizing: border-box;
+  border-radius: 25px;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.carousel-content {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5vh;
+}
+@media (max-width: 500px) {
+  .skill-card-body {
+    width: calc(100vw - 150px);
+    gap: 2vh;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 750px) {
+  .skill-card-body {
+    width: calc(100vh - 428px);
+    gap: 2vh;
+  }
+}
+
+@media (min-width: 751px) {
+  .skill-card-body {
+    width: 500px;
+    width: 500px;
+    gap: 4vh;
+    padding: 4vh;
+  }
+}

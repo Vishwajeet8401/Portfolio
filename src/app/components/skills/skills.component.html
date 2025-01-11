@@ -1,0 +1,110 @@
+<section class="skills">
+  <div class="skills-container">
+    <div class="d-flex-center-column container">
+      <div  class="heading-1 font-bold">
+          <span class="highligh-primary-color">My </span>Skills
+      </div>
+      <div>
+        <div>
+          <div class="carousel-wrapper">
+            <button class="carousel-btn left" (click)="scrollLeft()">
+              &#8592;
+            </button>
+            <div
+              class="carousel-container"
+              (touchstart)="onTouchStart($event)"
+              (touchmove)="onTouchMove($event)"
+              (touchend)="onTouchEnd()"
+            >
+              <div class="carousel-item">
+                <div class="carousel-content">
+                  <div class="skill-card-container">
+                    <div class="skill-card-header heading-5">
+                      Front-End Techologies
+                    </div>
+                    <div class="skill-card-body highligh-primary-color">
+                      <!-- <img
+                          class="icon"
+                          src="https://simpleicons.org/icons/angular.svg"
+                          alt="Angular"
+                        /> -->
+                      <i class="fa-brands fa-angular shake"></i>
+                      <i class="fa-brands fa-react shake "></i>
+                      <i class="fa-brands fa-html5 shake"></i>
+                      <i class="fa-brands fa-css shake"></i>
+                      <i class="fa-brands fa-bootstrap shake"></i>
+                    </div>
+                  </div>
+                  <div class="skill-card-container">
+                    <div class="skill-card-header heading-5">
+                      Back-End Techologies
+                    </div>
+                    <div class="skill-card-body">
+                      <i class="fa-brands fa-java shake"></i>
+                      <i class="fa-brands fa-js shake"></i>
+                      <img
+                        class="icon shake"
+                        src="https://simpleicons.org/icons/spring.svg"
+                        alt="spring"
+                      />
+                      <img
+                        class="icon shake"
+                        src="https://simpleicons.org/icons/springboot.svg"
+                        alt="springboot"
+                      /><img
+                        class="icon shake"
+                        src="https://simpleicons.org/icons/springsecurity.svg"
+                        alt="springsecurity"
+                      /><img
+                        class="icon shake"
+                        src="https://simpleicons.org/icons/auth0.svg"
+                        alt="auth0"
+                      />
+                      <img
+                        class="icon shake"
+                        src="https://simpleicons.org/icons/hibernate.svg"
+                        alt="hibernate"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-content">
+                  <div class="skill-card-container">
+                    <div class="skill-card-body">
+                      <div *ngFor="let icon of icons">
+                        <div class="img-container">
+                          <img class="icon shake" [src]="icon.src" [alt]="icon.alt" />
+                          <div class="alt-text">{{ icon.alt }}</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-content">
+                  <div class="skill-card-container">
+                    <div class="skill-card-body">
+                      <div *ngFor="let icon of technologies">
+                        <div class="text-lan font-normal heading-6 shake">
+                          {{ icon }}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Button -->
+            <button class="carousel-btn right" (click)="scrollRight()">
+              &#8594;
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

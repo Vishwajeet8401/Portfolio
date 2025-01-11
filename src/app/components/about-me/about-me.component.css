@@ -1,0 +1,100 @@
+.about-container {
+  height: calc(100vh - 150px); /* Set the calculated height as the default height */
+  min-height: fit-content; /* Ensure the div grows to fit its content if necessary */
+  background-color: var(--background-transprent-color);
+  width: 90%;
+  margin: 120px auto 2rem;
+  border-radius: 25px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  display: flex;
+  padding: 1vh;
+
+}
+.about {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+.text-color {
+  color: var(--text-color);
+}
+.highligh-primary-color {
+  color: var(--primary-color);
+}
+
+.quote {
+  /* font-size: 1rem; Original font size */
+  position: relative;
+  line-height: 1.4;
+}
+.quote2 {
+  /* font-size: 1rem; Original font size */
+  position: relative;
+}
+
+.quote::before {
+  content: "“  "; /* Opening quote */
+  font-size: 3.2rem;
+  position: absolute;
+  left: -0px;
+  top: -14px;
+  color: var(--primary-color);
+}
+
+.quote2::after {
+  content: " ”"; /* Closing quote */
+  content: " \201d";
+  font-size: 3.3rem;
+  position: absolute;
+  right: -25px;
+  bottom: -38px;
+  color: var(--primary-color);
+}
+.download-button-cv {
+  background-color: var(--primary-color);
+  color: var(--text-color-inverse);
+  display: inline-block;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  box-shadow: 1px 2px 15px 0px var(--primary-color);
+  letter-spacing: 0.1rem;
+  transition: 0.5s ease;
+}
+.download-button-cv:hover{
+  scale: 1.15;
+}
+
+.download-cv {
+  max-width: 300px;
+}
+
+.side2 {
+  display: flex;
+  flex-direction: column;
+  gap: 2.3vh;
+    padding: clamp(30px, 5%, 35px);
+  justify-content: center;
+  flex: 9;
+}
+.sideimage {
+  width: clamp(19rem, 22rem, 24rem);
+}
+
+.side1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 5;
+}
+.d-flex-center {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8vh;
+}
+
+@media (max-width: 768px) {
+  .side1 {
+    display: none;
+  }
+}

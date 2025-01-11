@@ -1,0 +1,25 @@
+<!-- <div class="navbar-wrapper" id="navbar" [class.hidden]="!isNavbarVisible">
+  <app-nav-bar [sticky]="isSticky"></app-nav-bar>
+</div> -->
+<div id="snap-container" class="container">
+  <div class="snap-item"><app-home class="h-100"></app-home></div>
+  <div class="snap-item d-center" pAnimateOnScroll
+  enterClass="animate-fadeinright"
+  leaveClass="animate-fadeoutright"><app-about-me class="h-100"></app-about-me></div>
+  <div class="snap-item" ><app-skills ></app-skills></div>
+  <div class="snap-item"><app-certificates></app-certificates></div>
+  <div class="snap-item"><app-projects></app-projects></div>
+  <div class="snap-item"><app-experiences></app-experiences></div>
+  <div class="snap-item"><app-contact-us></app-contact-us></div>
+  <div class="footer" style="scroll-snap-align: start;">
+    <div style="display:flex;flex-wrap: wrap; justify-content: center;" class="heading-6 font-bold">Copyright © <span class="highligh-primary-color">Vishwajeet Kalokhe</span> &nbsp; |&nbsp; <span>All Rights Reserved</span>
+      <div class="heading-6 font-bold">Made with ❤️ by <span class="highligh-primary-color">VK</span></div>
+    </div>
+  </div>
+
+
+
+</div>
+<nav id="navbar" [class.hidden]="!isNavbarVisible">
+  <app-nav-bar [sticky]="isSticky"></app-nav-bar>
+</nav>
