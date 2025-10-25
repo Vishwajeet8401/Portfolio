@@ -44,9 +44,9 @@ I am a Software Developer and Freelance Web Developer passionate about building 
 ## 📧 Contact
 If you want to collaborate or hire me for freelance work:
 
-Email: **vishwajeetkalokhe33@gmail.com**  
-LinkedIn: https://www.linkedin.com/in/vishwajeet-kalokhe  
-GitHub: https://github.com/kalokhe-vishwajeet
+Email: **vishwajeetkalokhe.dev@gmail.com**  
+LinkedIn:   https://www.linkedin.com/in/vishwajeet-kalokhe-887766219
+GitHub: https://github.com/Vishwajeet8401 
 
 ## 📝 License
 This project is open source and available under the MIT License.
